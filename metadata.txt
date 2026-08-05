@@ -1,0 +1,18 @@
+[general]
+name=LiDAR AutoVector Studio
+qgisMinimumVersion=3.99
+qgisMaximumVersion=4.40
+description=Interactive LiDAR-to-vector automation with independent extraction of water, vegetation, low vegetation, settlements, buildings, cropland, bare land, roads and elevated linear features.
+version=0.6.1
+author=Mr. Akmaul Hoque; Dr. Manish Kumar Naskar
+email=akmaulhoque41@gmail.com
+about=LiDAR AutoVector Studio converts LAS, LAZ, COPC and EPT point clouds into terrain derivatives and independently selectable vector feature candidates. It generates DTM, DSM, CHM, density, roughness and slope layers, then extracts water bodies, tall vegetation, low vegetation, settlement areas, buildings, cropland, bare land, roads/open surfaces and elevated linear features. Outputs are separate GeoPackage layers and require validation against imagery or field observations. External dependency: PDAL available in the QGIS or OSGeo4W environment.
+category=Vector
+icon=icon.svg
+experimental=True
+deprecated=False
+tags=lidar,point cloud,automatic vectorization,feature extraction,water,vegetation,settlement,building,cropland,bare land,roads,power lines,pdal,las,laz,copc,ept
+homepage=https://github.com/AkmaulHoque/world_lidar_feature_collector#readme
+tracker=https://github.com/AkmaulHoque/world_lidar_feature_collector/issues
+repository=https://github.com/AkmaulHoque/world_lidar_feature_collector
+changelog=0.6.1: Removed __pycache__ and compiled Python files; standardized authorship to Mr. Akmaul Hoque and Dr. Manish Kumar Naskar; prepared clean GitHub and QGIS repository release. 0.6.0: Security remediation: removed subprocess and arbitrary executable invocation; all point-cloud operations now use registered QGIS Processing PDAL algorithms; disabled in-plugin SMRF command pipeline. 0.5.1: Replaced broken qgis-bin.exe GDAL subprocess calls with in-process GDAL Calc, SieveFilter and Polygonize APIs; fixed Windows paths with spaces and invalid-data-source errors. 0.5.0: Fixed runtime workflow; preserves existing USGS classifications by default; added preflight dependency checks, NoData-safe masks, overwrite-safe outputs and raster validation. 0.4.0: Renamed to LiDAR AutoVector Studio; added independent low-vegetation and bare-land extraction; expanded feature selector; improved candidate-vector workflow and QGIS 4 metadata.
